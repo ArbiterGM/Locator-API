@@ -1,0 +1,110 @@
+:root {
+  --main: #0faf72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-container {
+  position: relative;
+}
+
+#map {
+  height: 65vh;
+  width: 75vw;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.search {
+  height: 4rem;
+  width: 32rem;
+  padding: 2rem 1rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main);
+  background-color: white;
+  border-radius: 24px;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 500;
+}
+
+.input-coords {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  height: 4rem;
+  width: 30rem;
+}
+
+ion-icon {
+  font-size: 3.5rem;
+  color: var(--main);
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  max-width: 75vw;
+  font-size: 3rem;
+  text-align: center;
+  color: #444;
+}
+
+.locate-me {
+  margin-top: 1rem;
+  padding: 1.2rem 1.5rem;
+  width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  .search {
+    height: 6rem;
+    width: 22rem;
+  }
+  .input-coords {
+    font-size: 2.2rem;
+    height: 3rem;
+    width: 14rem;
+  }
+}
