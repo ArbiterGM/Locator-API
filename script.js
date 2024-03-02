@@ -63,7 +63,7 @@ const init = function () {
       .then((res) => res.json())
       .then((data) => {
         if (!data.countryName) throw new Error("ქვეყანა ვერ მოიძებნა!🛑");
-        heading.textContent = `კოორდინატები არის ${data.countryName} - ში`;
+        heading.textContent = `კოორდინატები არის ${data.countryName}, ${data.city} - ში`;
       })
       .catch((err) => {
         heading.textContent = err;
